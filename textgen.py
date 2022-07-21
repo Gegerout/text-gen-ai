@@ -5,6 +5,10 @@ import os
 
 #os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
+!wget --no-check-certificate \
+    https://anonfiles.com/r0Y3T0zfy9/news_txt \
+    -O news.txt
+
 path_to_file = "news.txt"
 text = open(path_to_file, 'rb').read().decode(encoding="UTF-8")
 vocab = sorted(set(text))
