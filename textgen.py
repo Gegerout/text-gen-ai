@@ -144,6 +144,3 @@ for n in range(10000):
 
 result = tf.strings.join(result)
 print(result[0].numpy().decode("utf-8"), "\n\n" + "_" * 80)
-
-tf.saved_model.save(one_step_model, 'one_step')
-one_step_reloaded = tf.saved_model.load('one_step')
